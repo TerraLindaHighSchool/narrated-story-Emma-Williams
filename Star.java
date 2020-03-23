@@ -19,7 +19,8 @@ public class Star extends Actor
       image.fillOval (0, 0, size, size); 
       setImage(image);
       this.speed = speed;
-      
+      getX();
+      getY();
       x = Greenfoot.getRandomNumber(worldWidth);
       y = Greenfoot.getRandomNumber(worldHeight);
     
@@ -34,5 +35,15 @@ public class Star extends Actor
           x = getWorld().getWidth();
        }
        
+   }
+   
+   public int getX()
+   {
+       return x; 
+   }
+    
+   public int getY()
+   {
+       return y;
    }
 }
