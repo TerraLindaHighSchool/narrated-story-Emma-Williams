@@ -69,14 +69,18 @@ public class Space extends World
       }
     }
 
-   /**
-    * Prepare the world for the start of the program.
-    * That is: create the initial objects and add them to the world.
-    */
-   private void prepare()
-   {
-     Protagonist protagonist = new Protagonist();
-     addObject(protagonist,265,182);
-     protagonist.setLocation(40,220);
-   }
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Protagonist protagonist = new Protagonist();
+        addObject(protagonist,265,182);
+        protagonist.setLocation(40,220);
+        Button button = new Button();
+        addObject(button,300,300);
+        button.setLocation(200,200);
+        button.setLocation(494,21);
+    }
 }
